@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "iframe广告过滤器",
+    "version": "1.0",
+    "description": "去除页面中的iframe广告",
+    "browser_action": {
+    	"default_icon": "icon.png"
+  	},
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["js/jquery.min.js","js/filter.js"]
+        }
+    ]
+}
